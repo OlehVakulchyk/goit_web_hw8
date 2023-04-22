@@ -38,9 +38,9 @@ if __name__ == '__main__':
     while True:
         print("""Format input query:
             name: fullname      -   Search for quotes by author name
-                example - name: Albert Einstein
+                example - name: Albert Einstein or short - name: al
             tag: tag1           -   Search for quotes by tag
-                example - tag: life
+                example - tag: life or short - tag: li
             tags: tag1,tag2,... -   Search for quotes by a set of tags
                 example - tags: life,live
             exit    -  exit from the application
