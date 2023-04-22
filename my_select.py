@@ -1,6 +1,8 @@
 from models import Author, Quote
+from redis_cache import cache
 
 
+@cache
 def by_author(author: str):
     """
     пошук цитат за ім'ям автора
@@ -12,6 +14,7 @@ def by_author(author: str):
     return quotes, name
 
 
+@cache
 def by_tag(tag: str):
     """
     пошук цитат за тегом
@@ -21,6 +24,7 @@ def by_tag(tag: str):
     return quotes
 
 
+@cache
 def by_tags(tags_list: list):
     """
     пошук цитат за набором тегів

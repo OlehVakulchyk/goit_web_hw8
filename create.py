@@ -4,8 +4,6 @@ from mongoengine import disconnect
 
 from models import Author, Quote
 
-# from models import User, TextPost, LinkPost, ImagePost
-
 
 def load_json_author(file):
     with open(file, 'r', encoding='utf-8') as f:
